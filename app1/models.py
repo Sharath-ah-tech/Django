@@ -1,7 +1,5 @@
 from django.db import models
 
-# Create your models here.
-
 class Employee(models.Model):   
     name = models.CharField(max_length=200)
     age = models.IntegerField()
@@ -20,14 +18,16 @@ class Task(models.Model):
     def __str__(self):
         return self.title
     
+
 class Project(models.Model):
     name = models.CharField(max_length=200)
     description = models.TextField()
-    Number_of_Projects = models.IntegerField(default=0)
+    number_of_projects = models.IntegerField(default=0)
 
     def __str__(self):
         return self.name
     
+
 class Order(models.Model):
     order_number = models.CharField(max_length=100)
     order_date = models.DateField()
@@ -36,7 +36,8 @@ class Order(models.Model):
     def __str__(self):
         return self.order_number
 
-class certificate(models.Model):
+
+class Certificate(models.Model):
     certificate_name = models.CharField(max_length=200)
     issued_date = models.DateField()
     expiry_date = models.DateField()

@@ -1,14 +1,19 @@
 from django.urls import path
-from .views import EmployeeListCreate, EmployeeRetrieveUpdateDestroy, TaskListCreate, TaskRetrieveUpdateDestroy, ProjectListCreate, ProjectRetrieveUpdateDestroy, OrderListCreate, OrderRetrieveUpdateDestroy, CertificateListCreate, CertificateRetrieveUpdateDestroy
+from .views import *
+
 urlpatterns = [
-    path('Employee/', EmployeeListCreate.as_view(), name='employee-list'),
-    path('Employee/<int:pk>/', EmployeeRetrieveUpdateDestroy.as_view(), name='employee-detail'),
-    path('Task/', TaskListCreate.as_view(), name='task-list'),
-    path('Task/<int:pk>/', TaskRetrieveUpdateDestroy.as_view(), name='task-detail'),
-    path('Project/', ProjectListCreate.as_view(), name='project-list'),
-    path('Project/<int:pk>/', ProjectRetrieveUpdateDestroy.as_view(), name='project-detail'),
-    path('Order/', OrderListCreate.as_view(), name='order-list'),
-    path('Order/<int:pk>/', OrderRetrieveUpdateDestroy.as_view(), name='order-detail'),
-    path('Certificate/', CertificateListCreate.as_view(), name='certificate-list'),
-    path('Certificate/<int:pk>/', CertificateRetrieveUpdateDestroy.as_view(), name='certificate-detail'),
+    path('Employee/', EmployeeListCreate.as_view()),
+    path('Employee/<int:pk>/', EmployeeRetrieveUpdateDestroy.as_view()),
+
+    path('Task/', TaskListCreate.as_view()),
+    path('Task/<int:pk>/', TaskRetrieveUpdateDestroy.as_view()),
+
+    path('Project/', ProjectListCreate.as_view()),
+    path('Project/<int:pk>/', ProjectRetrieveUpdateDestroy.as_view()),
+
+    path('Order/', OrderListCreate.as_view()),
+    path('Order/<int:pk>/', OrderRetrieveUpdateDestroy.as_view()),
+
+    path('Certificate/', CertificateListCreate.as_view()),
+    path('Certificate/<int:pk>/', CertificateRetrieveUpdateDestroy.as_view()),
 ]
