@@ -26,3 +26,10 @@
 ## 6. Done CRUD operations via postman and in browser
 
 ## 7. Created superuser to manipulate admin and done CRUD operations
+
+## 8. Modified files to authorize
+* views
+* setttings
+* models
+* serializers
+* urls
