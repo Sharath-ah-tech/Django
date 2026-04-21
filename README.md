@@ -14,6 +14,15 @@
 * serializers.py
 * url.py
 
-## 4. Created tables in models.py
+## 4. Created tables in models.py 
+* Employee
+* Task
+* Project
+* Order
+* Certificate
 
-## 5. Migrated
+## 5. Created Databases and makemigrations
+
+## 6. Done CRUD operations via postman and in browser
+
+## 7. Created superuser to manipulate admin and done CRUD operations
