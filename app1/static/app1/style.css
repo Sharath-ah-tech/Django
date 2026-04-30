@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login box */
+.login-box{
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;   /* 🔥 THIS FIXES YOUR ISSUE */
+    gap: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Heading */
+.login-box h2{
+    text-align: center;
+    color: black;
+}
+
+/* Inputs */
+.login-box input{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+/* Button */
+.login-box button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hover */
+.login-box button:hover{
+    background: #444;
+}
+
+.con{
+    background: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Heading */
+.con h2{
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Links styled as buttons */
+.con a{
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    text-decoration: none;
+    background: black;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.con a:hover{
+    background: gold;
+    color: black;
+}
+
+/* Page layout */
+.page {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+/* Heading */
+.page h1 {
+    margin: 20px 0;
+}
+
+/* List container */
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Each row */
+.list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    margin: 8px 0;
+    background: white;
+    color: black;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Columns */
+.list li span {
+    flex: 1;
+    text-align: center;
+}
+
+/* Header row */
+.header li {
+    background: black;
+    color: white;
+}
+
+/* Hover effect */
+.list li:hover {
+    background: gold;
+    cursor: pointer;
+}
+
+.back-btn {
+    display: inline-block;
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+}

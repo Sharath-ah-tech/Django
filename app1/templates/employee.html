@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'app1/style.css' %}">
+    <title>Employees</title>
+</head>
+<body>
+
+<h1>Employees</h1>
+
+<ul class="list header">
+        <li>
+            <span>Name</span>
+            <span>Age</span>
+            <span>Position</span>
+            <span>Salary</span>
+        </li>
+    </ul>
+
+<ul id="employeeList" class="list"></ul>
+
+<script src="{% static 'app1/script.js' %}"></script>
+<script>
+    loadEmployee();
+</script>
+
+</body>
+</html>

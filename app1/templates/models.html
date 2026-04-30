@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'app1/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="con"><h2>Models</h2>
+        <a href="{% url 'employee' %}">Employees</a>
+        <a href="{% url 'tasks' %}">Tasks</a>
+        <a href="{% url 'projects' %}">Projects</a>
+        <a href="{% url 'orders' %}">Orders</a>
+        <a href="{% url 'certificates' %}">Certificate</a>
+    </div>
+</body>
+</html>
