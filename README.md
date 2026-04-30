@@ -33,3 +33,10 @@
 * models
 * serializers
 * urls
+
+## 9. Created necessary Frontend files
+* index.html which is the main page holds the form containing username, email, password to enter models.html
+* models.html has all the database models that are created
+* Employee.html, Task.html, Project.html, Order.html, Certificate.html which holds the data that are created
+
+## 10. Applied js and css for those html files
